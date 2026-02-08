@@ -138,9 +138,9 @@ section { padding: 90px 40px; }
   max-width: 1200px; margin: 0 auto;
   background: var(--white); border-radius: 28px; padding: 32px;
   box-shadow: var(--shadow-lg); border: 2px solid rgba(0,201,183,0.1);
-  position: relative; overflow: hidden;
+  position: relative; overflow: visible; min-height: 200px;
 }
-.tv-wrapper::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: var(--gradient-cta); }
+.tv-wrapper::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: var(--gradient-cta); border-radius: 28px 28px 0 0; }
 .installment-strip { max-width: 800px; margin: 28px auto 0; background: linear-gradient(135deg, #FFF9E6, #FFF0F0); border: 2px solid rgba(255,159,67,0.2); border-radius: 16px; padding: 16px 28px; text-align: center; font-size: 15px; font-weight: 600; }
 .installment-strip strong { color: var(--orange); }
 
@@ -150,9 +150,9 @@ section { padding: 90px 40px; }
   max-width: 1200px; margin: 0 auto;
   background: var(--white); border-radius: 28px; padding: 32px;
   box-shadow: var(--shadow-lg); border: 2px solid rgba(255,107,107,0.1);
-  position: relative; overflow: hidden;
+  position: relative; overflow: visible; min-height: 200px;
 }
-.hot-wrapper::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: var(--gradient-hot); }
+.hot-wrapper::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: var(--gradient-hot); border-radius: 28px 28px 0 0; }
 
 /* Min prices section */
 .minprice-section { background: var(--bg); }
@@ -160,9 +160,9 @@ section { padding: 90px 40px; }
   max-width: 1200px; margin: 0 auto;
   background: var(--white); border-radius: 28px; padding: 32px;
   box-shadow: var(--shadow-lg); border: 2px solid rgba(0,201,183,0.1);
-  position: relative; overflow: hidden;
+  position: relative; overflow: visible; min-height: 200px;
 }
-.minprice-wrapper::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(135deg, var(--sunny), var(--orange)); }
+.minprice-wrapper::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(135deg, var(--sunny), var(--orange)); border-radius: 28px 28px 0 0; }
 
 /* ========== DESTINATIONS ========== */
 .dest-section { background: linear-gradient(180deg, var(--bg) 0%, var(--mint) 100%); }
@@ -328,7 +328,7 @@ footer { background: #0D2137; color: rgba(255,255,255,0.7); padding: 60px 40px 3
     <h2 class="section-title reveal">Подберите тур <span class="accent">онлайн</span></h2>
     <p class="section-desc reveal">80+ туроператоров. Актуальные цены в тенге. Мгновенный подбор.</p>
   </div>
-  <div class="tv-wrapper reveal">
+  <div class="tv-wrapper">
     <div class="tv-search-form tv-moduleid-9975425"></div>
   </div>
   <div class="installment-strip reveal">💳 Рассрочка до <strong>12 месяцев без переплат</strong> — летите сейчас, платите потом!</div>
@@ -343,7 +343,7 @@ footer { background: #0D2137; color: rgba(255,255,255,0.7); padding: 60px 40px 3
     <h2 class="section-title reveal">Самые <span class="hot">выгодные</span> туры</h2>
     <p class="section-desc reveal">Туры со сниженными ценами. Успейте забронировать!</p>
   </div>
-  <div class="hot-wrapper reveal">
+  <div class="hot-wrapper">
     <div class="tv-hot-tours tv-moduleid-9988606"></div>
   </div>
 </section>
@@ -357,7 +357,7 @@ footer { background: #0D2137; color: rgba(255,255,255,0.7); padding: 60px 40px 3
     <h2 class="section-title reveal">Цены от <span class="sun">минимума</span></h2>
     <p class="section-desc reveal">Самые низкие цены на туры по всем направлениям</p>
   </div>
-  <div class="minprice-wrapper reveal">
+  <div class="minprice-wrapper">
     <div class="tv-min-price tv-moduleid-9988607"></div>
   </div>
 </section>
